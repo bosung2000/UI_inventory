@@ -10,7 +10,13 @@ public class UIHUD : MonoBehaviour
 
     private void Start()
     {
-        UiManager.Instance.ShowPopup<PopupPlayer>();
+        //var popup=UiManager.Instance.ShowPopup<PopupPlayer>();
+        //popup.Initialize(new TPlayer(),OnUpgrade);
+    }
+
+    public void OnUpgrade()
+    {
+
     }
     public void OnMenu()
     {
@@ -34,6 +40,11 @@ public class UIHUD : MonoBehaviour
                 }); ;
             }
         }
+    }
+
+    public void MainScrean()
+    {
+
     }
 
 }

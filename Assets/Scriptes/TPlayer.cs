@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class TPlayer : MonoBehaviour
 {
-    public int level;
-    public string userName;
+    private PlayerState playerState;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        playerState = new PlayerState(10, 5, 10, 15000, 30, 20, 100, 15);
     }
+    
+    
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
