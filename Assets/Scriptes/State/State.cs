@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class State
 {
+    public string name { get; set; }
     public int Power { get; set; }
     public int Defense { get; set; }
     public int health { get; set; }
     public int critical { get; set; }
 
-    public State(int power, int defense, int health, int critical)
+    public State(string name,int power, int defense, int health, int critical)
     {
-        Power = power;
-        Defense = defense;
+        this.name = name;
+        this.Power = power;
+        this.Defense = defense;
         this.health = health;
         this.critical = critical;
     }

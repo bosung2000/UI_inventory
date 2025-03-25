@@ -5,13 +5,15 @@ using static Cinemachine.DocumentationSortingAttribute;
 
 public class PlayerState : State
 {
+    
     public int Lv { get; set; }
     public int CurrentExp { get; set; }
     public int MaxExp { get; set; }
     public int Gold { get; set; }
-    public PlayerState(int Lv,int CurrentEXp,int MaxExp,int Gold ,int power, int defense, int health, int critical)
-        : base(power, defense, health, critical)
+    public PlayerState(int Lv,int CurrentEXp,int MaxExp,int Gold ,string name,int power, int defense, int health, int critical)
+        : base(name,power, defense, health, critical)
     {
+        
         this.Lv = Lv;
         this.CurrentExp = CurrentEXp;
         this.MaxExp = MaxExp;

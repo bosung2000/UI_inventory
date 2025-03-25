@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemState : State
 {
-    public ItemState(int power, int defense, int health, int critical) : base(power, defense, health, critical)
+    public ItemState(string name,int power, int defense, int health, int critical) : base(name,power, defense, health, critical)
     {
 
     }

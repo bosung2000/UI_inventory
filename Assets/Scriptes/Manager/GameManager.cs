@@ -27,16 +27,17 @@ public class GameManager : MonoBehaviour
             _instance= this;
             DontDestroyOnLoad(gameObject);
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
+        _player = FindObjectOfType<TPlayer>();
     }
 
 
     private void Start()
     {
-        _player =FindObjectOfType<TPlayer>();
+        
     }
 
 }

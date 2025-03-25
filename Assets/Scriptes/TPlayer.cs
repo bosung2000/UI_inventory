@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class TPlayer : MonoBehaviour
 {
-    private PlayerState playerState;
+    private PlayerState _playerState;
+    public PlayerState GetPlayerState =>_playerState;
 
+    private void Awake()
+    {
+        _playerState = new PlayerState(10, 5, 10, 15000, "Bosung", 30, 20, 100, 15);
+    }
     private void Start()
     {
-        playerState = new PlayerState(10, 5, 10, 15000, 30, 20, 100, 15);
+        
     }
     
     
