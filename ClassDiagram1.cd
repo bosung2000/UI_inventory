@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PopupPlayer" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAKBBAQAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scriptes\PopupPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UiBase" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEACAAACAAAAAAEAAAAAABAAAAAAACAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scriptes\UiBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIHUD" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAIAABAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Assets\Scriptes\UIHUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UiManager" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAIAAAAAAAAAAAAAAAAAAAAAQAAAAQAAIAAAAAAA=</HashCode>
+      <FileName>Assets\Scriptes\UiManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIMenu" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scriptes\UIMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

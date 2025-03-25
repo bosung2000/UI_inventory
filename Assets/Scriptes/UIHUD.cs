@@ -7,6 +7,11 @@ public class UIHUD : MonoBehaviour
 {
     [SerializeField] private GameObject objMenu;
     private bool isMove = false;
+
+    private void Start()
+    {
+        UiManager.Instance.ShowPopup<PopupPlayer>();
+    }
     public void OnMenu()
     {
         if (isMove == false)
