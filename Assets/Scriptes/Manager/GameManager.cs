@@ -9,9 +9,9 @@ public class GameManager : MonoBehaviour
     {
         get
         {
-            if (_instance ==null)
+            if (_instance == null)
             {
-                _instance= FindObjectOfType<GameManager>();
+                _instance = FindObjectOfType<GameManager>();
             }
             return _instance;
         }
@@ -19,12 +19,12 @@ public class GameManager : MonoBehaviour
 
     private TPlayer _player;
     public TPlayer CurrentPlayer => _player;
-
+    public List<ItemData> itemData;
     private void Awake()
     {
-        if (_instance ==null)
+        if (_instance == null)
         {
-            _instance= this;
+            _instance = this;
             DontDestroyOnLoad(gameObject);
         }
         //else
@@ -38,6 +38,24 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         
+        //AddItemData();
+
+        AddItemDataUI();
     }
 
+    private void AddItemDataUI()
+    {
+        for (int i = 0; i < itemData.Count; i++)
+        {
+            InventoryManager.Instance.AddItem(itemData[i].Item);
+        }
+    }
+
+    //private void AddItemData()
+    //{
+    //    for (int i = 0; i < itemData.Count; i++)
+    //    {
+    //        itemData.Add(itemData[i]);
+    //    }
+    //}
 }
