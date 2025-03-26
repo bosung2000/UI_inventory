@@ -19,5 +19,7 @@ public class UIMenu : MonoBehaviour
     public void OnInventory()
     {
         Debug.Log("Is Inventory");
+        UiManager.Instance.SetActive_UIMainScrean();
+        UiManager.Instance.SetActive_InventoryScrean();
     }
 }

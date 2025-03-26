@@ -20,7 +20,7 @@ public class UiManager : MonoBehaviour
     PlayerState _state;
     [SerializeField] private UIMainScrean _UIMainScrean;
     [SerializeField] private StateScrean _UIStateScrean;
-    [SerializeField] private UIMainScrean _UIInventoryScrean;
+    [SerializeField] private InventoryScrean _UIInventoryScrean;
 
     private void Awake()
     {
@@ -41,6 +41,8 @@ public class UiManager : MonoBehaviour
         _player = GameManager.Instance.CurrentPlayer;
         _state = _player.GetPlayerState;
 
+        //_UIMainScrean.gameObject.SetActive(true);
+        //_UIInventoryScrean.gameObject.SetActive(true);
 
     }
 
@@ -72,7 +74,25 @@ public class UiManager : MonoBehaviour
             _UIStateScrean.gameObject.SetActive(true);
         }
     }
+    public void SetActive_InventoryScrean()
+    {
+       
 
+        // 현재 상태 로깅
+        Debug.Log($"Current inventory screen state: {_UIInventoryScrean.gameObject.activeInHierarchy}");
+        if (_UIInventoryScrean.gameObject.activeInHierarchy)
+        {
+
+            _UIInventoryScrean.gameObject.SetActive(false);
+        }
+        else
+        {
+
+            _UIInventoryScrean.gameObject.SetActive(true);
+        }
+        // 상태 변경 후 로깅
+        Debug.Log($"New inventory screen state: {_UIInventoryScrean.gameObject.activeInHierarchy}");
+    }
 
 
 
