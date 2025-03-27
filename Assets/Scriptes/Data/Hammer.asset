@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Hammer
   m_EditorClassIdentifier: 
   Item:
+    id: 3
     Name: "\uD574\uBA38"
     Type: 0
     str: 3

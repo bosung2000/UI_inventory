@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Gun
   m_EditorClassIdentifier: 
   Item:
+    id: 2
     Name: "\uCD1D"
     Type: 0
     str: 5

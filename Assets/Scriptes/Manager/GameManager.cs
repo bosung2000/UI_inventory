@@ -40,14 +40,32 @@ public class GameManager : MonoBehaviour
         
         //AddItemData();
 
-        AddItemDataUI();
+        //AddItemDataUI();
+
+        
+    }
+
+    public void Addinventory()
+    {
+        for (int i = 0; i < itemData.Count; i++)
+        {
+            InventoryManager.Instance.AddinventoryItem(itemData[i]);
+        }
+    }
+
+    public void Removeinventory()
+    {
+        for (int i = 0; i < itemData.Count; i++)
+        {
+            InventoryManager.Instance.RemoveinventoryItem(itemData[i]);
+        }
     }
 
     private void AddItemDataUI()
     {
         for (int i = 0; i < itemData.Count; i++)
         {
-            InventoryManager.Instance.AddItem(itemData[i].Item);
+            InventoryManager.Instance.AddItemSlot(itemData[i].Item);
         }
     }
 

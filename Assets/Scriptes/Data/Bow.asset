@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Bow
   m_EditorClassIdentifier: 
   Item:
+    id: 1
     Name: "\uD65C"
     Type: 0
     str: 10

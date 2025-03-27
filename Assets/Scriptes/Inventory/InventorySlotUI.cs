@@ -22,6 +22,14 @@ public class InventorySlotUI : MonoBehaviour
         }
     }
 
+    public void RemoveSlot(ItemSlot itemSlot)
+    {
+        //itemSlot.isEmpty = true;
+        iconImage.sprite = null;
+        iconImage.enabled = false;
+    }
+
+
     private void Start()
     {
         slotButton.onClick.AddListener(OnSlotClick);

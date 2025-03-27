@@ -33,6 +33,10 @@ public class InventoryUI : MonoBehaviour
             {
                slotUIs[i].UpdateSlot(InventoryManager.Instance.slots[i]);
             }
+            else
+            {
+                slotUIs[i].RemoveSlot();
+            }
         }
     }
 }
